@@ -36,8 +36,8 @@ def won?(board)
         else
           wins = false
         end
-      return wins
       end
+    return wins
   else
     false
   end
