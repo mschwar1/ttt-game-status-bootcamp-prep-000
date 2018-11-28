@@ -33,4 +33,5 @@ def won?(board)
         false
       end
     end
+  return current_winners
 end
