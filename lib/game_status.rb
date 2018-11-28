@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
 
-  if (board.any?{|i| (i == "X" || i =="O")} || board.all?{|i| (i == "X" || i =="O")})
+  if board.any?{|i| (i == "X" || i =="O")}
 
     WIN_COMBINATIONS.each do |win_combination|
         win_index_1 = win_combination[0] #first position in winning combo
