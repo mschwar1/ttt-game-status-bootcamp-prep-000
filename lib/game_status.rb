@@ -66,4 +66,5 @@ def winner?(board)
     return nil
   else
     return check_board[0]
+  end
 end
