@@ -41,3 +41,16 @@ def full?(board)
     (space == "X" || space == "O")
   end
 end
+
+def draw_board(board)
+  if won?(board)
+    return false
+  elsif !full?(board)
+    return false
+  else
+    return true
+  end
+end
+    
+
+bend
