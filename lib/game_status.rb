@@ -17,7 +17,6 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-
   WIN_COMBINATIONS.detect do |win_combination|
       win_index_1 = win_combination[0] #first position in winning combo
       win_index_2 = win_combination[1]
@@ -35,4 +34,9 @@ def won?(board)
         false
     end
   end
+end
+
+def full?(board)
+  board.all? do |space|
+    (space == "X" || "O")
 end
