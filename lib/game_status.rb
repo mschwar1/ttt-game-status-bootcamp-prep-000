@@ -61,9 +61,10 @@ def over?(board)
 end
 
 def winner?(board)
-  if !won?(board)
-    return nil
+  check_board = won?(board)
+  if check_board.class == Array
+    return check_board[0]
   else
-    return won?(board)[0]
+    nil
   end
 end
