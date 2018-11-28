@@ -63,7 +63,7 @@ end
 def winner(board)
   check_board = won?(board)
   if check_board.class == Array
-    return check_board[0]
+    return board[check_board[0]]
   else
     nil
   end
