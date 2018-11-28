@@ -51,6 +51,3 @@ def draw_board(board)
     return true
   end
 end
-    
-
-bend
