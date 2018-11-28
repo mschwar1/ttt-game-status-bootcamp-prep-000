@@ -60,7 +60,7 @@ def over?(board)
   end
 end
 
-def winner?(board)
+def winner(board)
   check_board = won?(board)
   if check_board.class == Array
     return check_board[0]
