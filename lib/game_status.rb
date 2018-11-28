@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  current_winners = []
+
   WIN_COMBINATIONS.each do |win_combination|
       win_index_1 = win_combination[0] #first position in winning combo
       win_index_2 = win_combination[1]
@@ -28,7 +28,9 @@ def won?(board)
       position_3 = board[win_index_3]
 
       if position_1 == "X" && position_2 == "X" && position_3 == "X"
-        current_winners >> win_combination
+        return win_combination
+      elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+        return win_combination
       else
         false
       end
